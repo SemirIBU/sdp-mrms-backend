@@ -1,0 +1,10 @@
+const express = require("express");
+const ctrl = require("../controllers/appointmentController");
+const auth = require("../middlewares/auth");
+const role = require("../middlewares/role");
+const router = express.Router();
+router.post("/book", auth, role(["patient", "admin"]), ctrl.book);
+router.get("/my", auth, ctrl.listMy);
+router.post("/:id/cancel", auth, ctrl.cancel);
+router.get("/available", auth, ctrl.available);
+module.exports = router;

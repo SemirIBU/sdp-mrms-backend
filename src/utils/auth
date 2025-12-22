@@ -1,0 +1,8 @@
+export const getRole = () => localStorage.getItem('role');
+
+export const isAdmin = () => getRole() === 'admin';
+export const isDoctor = () => getRole() === 'doctor';
+export const isPatient = () => getRole() === 'patient';
+
+export const isAuthenticated = () =>
+  Boolean(localStorage.getItem('token'));

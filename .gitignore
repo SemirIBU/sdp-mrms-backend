@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# environment
+.env
+.env.local
+
+# uploads and backups
+uploads/
+backups/
+
+# logs
+npm-debug.log*
+logs/
+
+# coverage
+coverage/
+
+# editor
+.vscode/
+.DS_Store
+
+# misc
+yarn-error.log*
+.pnp.*
