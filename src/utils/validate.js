@@ -1,7 +1,7 @@
 function requireFields(obj, fields){
   const missing = [];
   for(const f of fields){
-    if(obj[f] === undefined || obj[f] === null || obj[f] === '') missing.push(f);
+    if(obj[f] === undefined || obj[f] === null) missing.push(f);
   }
   return missing;
 }
