@@ -2,6 +2,9 @@
 
 Medical Records Management System - Backend API
 
+## About
+This project was developed as part of my Bachelor's thesis at IBU Sarajevo.
+
 ## Tech Stack
 
 - Node.js
